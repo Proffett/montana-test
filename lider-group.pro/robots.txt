@@ -1,0 +1,3 @@
+User-agent: *
+host: https://lider-group.pro/
+sitemap: https://lider-group.pro/sitemap.xml

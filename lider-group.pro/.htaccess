@@ -1,0 +1,33 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+RewriteCond %{REQUEST_URI} ^/neft.html$
+RewriteRule ^.*$ https://lider-group.pro/nefteshlamy.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/phb.html$
+RewriteRule ^.*$ https://lider-group.pro/polihlorirovannye_bifenily.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/med.html$
+RewriteRule ^.*$ https://lider-group.pro/medicinskie_othody.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/sozh.html$
+RewriteRule ^.*$ https://lider-group.pro/othody_laki_kraski.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/legal.html$
+RewriteRule ^.*$ https://lider-group.pro/pasportizaciya_othodov.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/license.html$
+RewriteRule ^.*$ https://lider-group.pro/licensiya_na_utilizaciu_othodov.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/docs.html$
+RewriteRule ^.*$ https://lider-group.pro/licensiya_na_utilizaciu_othodov.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/service-page.html$
+RewriteRule ^.*$ https://lider-group.pro/uslugi_utilizaciya_othodov.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/eco.html$
+RewriteRule ^.*$ https://lider-group.pro/pasportizaciya_othodov.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/eco-book.html$
+RewriteRule ^.*$ https://lider-group.pro/posobiye_ekologa_predpriyatiya.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/news.html$
+RewriteRule ^.*$ https://lider-group.pro/novosti_ekologii.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/contacts.html$
+RewriteRule ^.*$ https://lider-group.pro/kontakty.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/company.html$
+RewriteRule ^.*$ https://lider-group.pro/kompaniya.html? [R=301,L]
+RewriteCond %{REQUEST_URI} ^/index.html$
+RewriteRule ^.*$ https://lider-group.pro? [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://lider-group.pro? [R=301,L]
